@@ -4,6 +4,10 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.10",
   networks:{
+    optimism:{
+      url: process.env.OPTIMISM_GOERLI_ENDPOINT,
+      accounts: [process.env.PRIVATE_KEY],
+    },
     goerli:{
       url: process.env.INFURA_GOERLI_ENDPOINT,
       accounts: [process.env.PRIVATE_KEY],

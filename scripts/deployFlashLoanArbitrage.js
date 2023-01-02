@@ -6,12 +6,12 @@ async function main() {
     "FlashLoanArbitrage"
   );
   const flashLoanArbitrage = await FlashLoanArbitrage.deploy(
-    "0xc4dCB5126a3AfEd129BC3668Ea19285A9f56D15D"
+    "0x74a328ED938160D702378Daeb7aB2504714B4E4b"
   );
 
   await flashLoanArbitrage.deployed();
 
-  console.log("Flash loan contract deployed: ", flashLoanArbitrage.address);
+  console.log("Flash loan Arbitrage contract deployed: ", flashLoanArbitrage.address);
 }
 
 main().catch((error) => {
